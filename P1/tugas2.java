@@ -92,7 +92,7 @@ public class tugas2 {
         }
     }
 
-   
+    //ss
     static void cariHari(String[][] data,String hari){
         boolean ada=false;
 
