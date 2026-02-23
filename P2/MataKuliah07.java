@@ -24,4 +24,14 @@ public class MataKuliah07 {
     void kurangiJam(int jam){
         jumlahJam = jumlahJam - jam;
     }
+
+    public MataKuliah07() {
+
+    }
+    public MataKuliah07(String kodeMK, String nama, int sks, int jumlahJam){
+        this.kodeMK = kodeMK;
+        this.nama = nama;
+        this.sks = sks;
+        this.jumlahJam = jumlahJam;
+    }
 }
