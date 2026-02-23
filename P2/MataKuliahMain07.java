@@ -15,6 +15,9 @@ public class MataKuliahMain07 {
         mk.kurangiJam(2);
         mk.tampilInformasi();
 
+        MataKuliah07 mk2 = new MataKuliah07("MK02","Basis Data",2,3);
+        mk2.tambahJam(1);
+        mk2.tampilInformasi();
 
     }
 }
