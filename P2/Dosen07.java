@@ -29,4 +29,15 @@ public class Dosen07 {
         bidangKeahlian = bidang;
         return bidangKeahlian;
     }
+
+    public Dosen07(){
+
+    }
+    public Dosen07(String idDosen, String nama, boolean statusAktif, int tahunBergabung,String bidangKeahlian){
+        this.idDosen = idDosen;
+        this.nama = nama;
+        this.statusAktif = statusAktif;
+        this.tahunBergabung = tahunBergabung;
+        this.bidangKeahlian = bidangKeahlian;
+    }
 }
