@@ -13,5 +13,9 @@ public class DosenMain07 {
         System.out.println("Masa Kerja: "+dosen.hitungMasaKerja(2026)+" tahun");
         System.out.println("Keahlian Baru: "+dosen.ubahKeahlian("Basis Data"));
         dosen.tampikanInformasi();
+
+        Dosen07 dosen2 = new Dosen07("D02","Chandra Bella Vista, S.Kom.,M.T.",true,2020,"Rekayasa Perangkat Lunak");
+        dosen2.ubahKeahlian("Basis Data");
+        dosen2.tampikanInformasi();
     }
 }
