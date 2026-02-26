@@ -23,6 +23,17 @@ public class MataKuliahDemo07 {
 
             arrayOfmataKuliah[i] = new MataKuliah07(kode, nama, sks, jumlahJam);
 
+
+
+        }
+
+        for (int i = 0; i < 3; i++) {
+            System.out.println("Data Mata Kuliah ke-" + (i+1));
+            System.out.println("Kode : " + arrayOfmataKuliah[i].kode);
+            System.out.println("Nama : "+ arrayOfmataKuliah[i].nama);
+            System.out.println("Sks : "+ arrayOfmataKuliah[i].sks);
+            System.out.println("Jumlah Jam :"+ arrayOfmataKuliah[i].jumlahJam);
+            System.out.println("--------------------------------------------");
         }
     }
 }
