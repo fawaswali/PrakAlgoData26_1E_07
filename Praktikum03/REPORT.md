@@ -84,3 +84,57 @@ pada langkah no 3.
 
 2.Array sudah dibuat, tetapi objek Mahasiswa di dalam array belum dibuat.
 
+## 3.4 Constructor Berparameter
+
+### hasil kode
+<img width="685" height="308" alt="Cuplikan layar 2026-02-26 100524" src="https://github.com/user-attachments/assets/9973ec6a-3331-4f15-a8a8-010320e734c7" />
+
+<img width="679" height="812" alt="Cuplikan layar 2026-02-26 101500" src="https://github.com/user-attachments/assets/924ea393-a750-46ea-a5dc-f7cccbf627c3" />
+
+### hasil running
+<img width="397" height="654" alt="Cuplikan layar 2026-02-26 101405" src="https://github.com/user-attachments/assets/2a538a09-def8-449d-9d86-c29da81cef03" />
+
+### 3.4.3 Pertanyaan
+1.Apakah suatu class dapat memiliki lebih dari 1 constructor? Jika iya, berikan contohnya
+
+Ya, bisa. Ini disebut constructor overloading (satu class punya beberapa constructor dengan parameter berbeda).
+
+Contoh:
+
+class Matakuliah07 {
+    String kode;
+    String nama;
+    int sks;
+
+    Matakuliah07() {
+        kode = "000";
+        nama = "Default";
+        sks = 0;
+    }
+
+    Matakuliah07(String kd, String nm, int s) {
+        kode = kd;
+        nama = nm;
+        sks = s;
+    }
+}
+
+2.Tambahkan method tambahData() pada class Matakuliah, kemudian gunakan method
+tersebut di class MatakuliahDemo untuk menambahkan data Matakuliah
+<img width="632" height="486" alt="Cuplikan layar 2026-03-03 225726" src="https://github.com/user-attachments/assets/eb7eeca0-4edd-405d-8f5d-b8c2a1191349" />
+
+
+<img width="780" height="860" alt="Cuplikan layar 2026-03-03 225718" src="https://github.com/user-attachments/assets/4cee28d2-9b95-4d00-826e-dadaa932d750" />
+
+3.Tambahkan method cetakInfo() pada class Matakuliah, kemudian gunakan method
+tersebut di class MatakuliahDemo untuk menampilkan data hasil inputan di layar
+
+<img width="676" height="616" alt="Cuplikan layar 2026-03-03 230334" src="https://github.com/user-attachments/assets/49e633ea-0573-4da6-a8dc-6bbd074843dd" />
+
+4.Modifikasi kode program pada class MatakuliahDemo agar panjang (jumlah elemen) dari
+array of object Matakuliah ditentukan oleh user melalui input dengan Scanner
+
+
+
+
+
