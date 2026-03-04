@@ -133,8 +133,42 @@ tersebut di class MatakuliahDemo untuk menampilkan data hasil inputan di layar
 
 4.Modifikasi kode program pada class MatakuliahDemo agar panjang (jumlah elemen) dari
 array of object Matakuliah ditentukan oleh user melalui input dengan Scanner
+<img width="834" height="814" alt="Cuplikan layar 2026-03-03 230756" src="https://github.com/user-attachments/assets/72493330-c6b2-4bfb-bb9d-ac0b45704e16" />
+
+
+## 3.5 Tugas
+1.Buatlah program untuk menampilkan informasi tentang dosen. Program dapat menerima input
+semua informasi terkait dosen dan menampilkanya kembali ke layar. Program ini terdiri dari class
+Dosen<NoPresensi> dengan attribute/property sebagai berikut;
+String kode
+String nama
+Boolean jenisKelamin
+int usia
+dengan methode constructor sebagai berikut;
+public dosen(String kode, String nama, Boolean jenisKelamin, int usia) {
+…………….;
+…………….;
+}
+Kemudian buatlah class DosenDemo<NoPresensi> untuk proses input dan menampilkan data
+beberapa dosen. Gunakan looping dengan FOR untuk pembuatan array of object. Gunakan
+looping dengan FOREACH untuk menampilkan data ke layar. 
+
+<img width="678" height="516" alt="Cuplikan layar 2026-03-05 040848" src="https://github.com/user-attachments/assets/3b0b67f7-aad8-4f7f-a26f-c2b1385725e6" />
 
 
 
+<img width="553" height="867" alt="Cuplikan layar 2026-03-05 040912" src="https://github.com/user-attachments/assets/52ea000f-4a0c-470f-804b-57e60bb14df3" />
 
+2. Tambahkan class baru DataDosen<NoPresensi> dengan beberapa method berikut;
+a. dataSemuaDosen(Dosen[] arrayOfDosen)untuk menampilkan data semua dosen
+b. jumlahDosenPerJenisKelamin(Dosen[] arrayOfDosen) untuk menampilkan data
+jumlah dosen per jenis kelamin (Pria / Wanita)
+c. rerataUsiaDosenPerJenisKelamin(Dosen[] arrayOfDosen) untuk menampilkan
+rata-rata usia dosen per jenis kelamin (Pria / Wanita)
+d. infoDosenPalingTua(Dosen[] arrayOfDosen) untuk menampilkan data dosen paling
+tua
+e. infoDosenPalingMuda(Dosen[] arrayOfDosen) untuk menampilkan data dosen paling
+muda
+Semua method tersebut harus bisa dipanggil/ditest dari class DosenDemo
 
+<img width="584" height="906" alt="Cuplikan layar 2026-03-05 040953" src="https://github.com/user-attachments/assets/aa1c9bf8-7446-46ed-b94c-464dce9087a4" />
