@@ -1,0 +1,18 @@
+package minggu5;
+import java.util.Scanner;
+public class MainSum07 {
+    public static void main(String[] args) {
+        Scanner fawas = new Scanner(System.in);
+        System.out.print("Masukkan jumlah elemen: ");
+        int elemen = fawas.nextInt();
+
+        Sum07 sm = new Sum07(elemen);
+        for (int i = 0; i < elemen; i++) {
+            System.out.print("Masukkan keuntunngan ke-"+(i+1)+": ");
+            sm.keuntungan[i] = fawas.nextDouble();
+        }
+
+        System.out.println("Total keuntungan menggunkan BruteForce: "+sm.totalBF());
+        System.out.println("Total keuntungan menggunakan Divide and Conquer: "+sm.totalDC(sm.keuntungan,0,elemen-1));
+    }
+}
