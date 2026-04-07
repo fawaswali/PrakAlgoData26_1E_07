@@ -4,9 +4,11 @@ public class SortingMain07 {
     public static void main(String[] args) {
         int a[] = {20, 10, 2, 7, 12};
         int b[] = {30, 20, 2, 8, 14};
+        int c[] = {40, 10, 4, 9, 3};
 
         Sorting07 dataurut1 = new Sorting07(a, a.length);
         Sorting07 dataurut2 = new Sorting07(b, b.length);
+        Sorting07 dataurut3 = new Sorting07(c, c.length);
 
         System.out.println("Data awal 1");
         dataurut1.tampil();
@@ -20,5 +22,10 @@ public class SortingMain07 {
         System.out.println("Data sudah diurutkan dengan BUBBLE SORT (ASC)");
         dataurut2.tampil();
 
+        System.out.println("Data awal 3");
+        dataurut3.tampil();
+        dataurut3.bubbleSort();
+        System.out.println("Data sudah diurutkan dengan BUBBLE SORT (ASC)");
+        dataurut3.tampil();
     }
 }

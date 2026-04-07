@@ -48,4 +48,16 @@ public class Sorting07 {
             data07[min]=temp;
         }
     }
+
+    void insertionSort(){
+        for (int i=1; i<=data07.length-1; i++){
+            int temp=data07[i];
+            int j=i-1;
+            while (j>=0 && data07[j]>temp) {
+                data07[j+1]=data07[j];
+                j--;
+            }
+            data07[j+1]=temp;
+        }
+    }
 }
