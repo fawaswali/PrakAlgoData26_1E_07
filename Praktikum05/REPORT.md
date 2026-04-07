@@ -46,7 +46,8 @@ dan insertion sort pada program
 
 
 1. Kode tersebut berfungsi untuk menukar (swap) dua elemen dalam array jika urutannya salah.
-2.<img width="392" height="145" alt="Cuplikan layar 2026-04-07 210741" src="https://github.com/user-attachments/assets/908a2b33-e441-453a-85f1-81850aebc91f" />
+2. <img width="392" height="145" alt="Cuplikan layar 2026-04-07 210741" src="https://github.com/user-attachments/assets/908a2b33-e441-453a-85f1-81850aebc91f" />
+
 3.  Kondisi ini berarti:
    j >= 0 → agar tidak keluar dari batas array
    data07[j] > temp → jika data lebih besar dari nilai yang akan disisipkan
