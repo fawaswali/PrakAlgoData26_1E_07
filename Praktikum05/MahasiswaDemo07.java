@@ -34,5 +34,9 @@ public class MahasiswaDemo07 {
 
         System.out.println("Data setelah sorting (DESC):");
         list.tampil();
+
+        System.out.println("Data yang sudah terurut menggunkan SELECTION SORT (ASC)");
+        list.SelectionSort();
+        list.tampil();
     }
 }
