@@ -55,6 +55,27 @@ dan insertion sort pada program
 
 
 
+## 5.3 Praktikum 2- (Sorting Menggunakan Array of Object) 
+## 5.3.1 Langkah Praktikum 2 - Mengurutkan Data Mahasiswa Berdasarkan IPK (Bubble Sort)
+<img width="438" height="439" alt="Cuplikan layar 2026-04-07 211519" src="https://github.com/user-attachments/assets/bb7a5c30-0909-4aee-9ded-e44a27e35eea" />
+
+### 5.3.2 Langkah-langkah Praktikum 2
+<img width="459" height="569" alt="Cuplikan layar 2026-04-07 211619" src="https://github.com/user-attachments/assets/e7cee90c-214d-4f2f-ad30-7e816582202d" />
+<img width="455" height="652" alt="Cuplikan layar 2026-04-07 211710" src="https://github.com/user-attachments/assets/7ab04e60-0165-4a3d-9cc0-b2942df2a1d5" />
+
+<img width="382" height="661" alt="Cuplikan layar 2026-04-07 211747" src="https://github.com/user-attachments/assets/9a5437c9-6a40-45dc-8888-61a907eaf362" />
+
+### hasil code
+
+### hasil output
+
+### 5.3.4 Pertanyaan
+<img width="415" height="183" alt="Cuplikan layar 2026-04-07 211942" src="https://github.com/user-attachments/assets/416ef66e-af2a-4ee7-a860-e09adf4c64ef" />
+
+
+
+
+
 
 
 
