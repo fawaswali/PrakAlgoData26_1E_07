@@ -59,6 +59,25 @@ public class MahasiswaBerprestasi07 {
         }
     }
 
+    //findBinarySearch
+    int findBinarySearch(double cari, int left, int right){
+        int mid;
+        if (right>=left) {
+            mid =(left+right)/2;
+            if (cari ==listMhs[mid].ipk07) {
+                return (mid);
+            }
+            else if (listMhs[mid].ipk07>cari){
+                return findBinarySearch(cari, left, mid-1);
+            }
+            else{
+                return findBinarySearch(cari, mid+1, right);
+            }
+        }
+        return -1;
+    }
+
+
     //sequentialsearching
     int sequentialSearching(double cari){
         int posisi = -1;

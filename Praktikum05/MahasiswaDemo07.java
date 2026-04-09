@@ -30,19 +30,20 @@ public class MahasiswaDemo07 {
         }
 
         list.tampil();
-        //melakukan pencarian data sequential
+        //melakukan pencarian data Binary
         System.out.println("----------------------------------------------");
         System.out.println("Pencarian data");
         System.out.println("----------------------------------------------");
         System.out.println("masukkan ipk mahasiswa yang ingin dicari: ");
         System.out.println("IPK: ");
         double cari = Double.parseDouble(fawas.nextLine());
-
-        System.out.println("menggunakan sequential searching");
-        double posisi = list.sequentialSearching(cari);
-        int pss= (int)posisi;
-        list.tampilPosisi(cari, pss);
-        list.tampilDataSearch(cari, pss);
+        System.out.println("----------------------------------------");
+        System.out.println("menggunakan Binary search");
+        System.out.println("----------------------------------------");
+        double posisi2 = list.findBinarySearch(cari,0,jumMhs-1);
+        int pss2= (int)posisi2;
+        list.tampilPosisi(cari, pss2);
+        list.tampilDataSearch(cari, pss2);
 
 
 
