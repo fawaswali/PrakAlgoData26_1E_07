@@ -5,8 +5,10 @@ import java.util.Scanner;
 public class MahasiswaDemo07 {
     public static void main(String[] args) {
         Scanner fawas = new Scanner(System.in);
-        MahasiswaBerprestasi07 list = new MahasiswaBerprestasi07();
-        int jumMhs=5;
+        System.out.print("Masukkan jumlah mahasiswa: ");
+        int jumMhs = Integer.parseInt(fawas.nextLine());
+
+        MahasiswaBerprestasi07 list = new MahasiswaBerprestasi07(jumMhs);
 
         for (int i = 0; i < jumMhs; i++) { //modif jobsheet 6 praktikum 1
             System.out.println("Masukkan data mahasiswa ke-" + (i+1));

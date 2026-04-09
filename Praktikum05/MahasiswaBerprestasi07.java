@@ -1,8 +1,12 @@
 package Praktikum05;
 
 public class MahasiswaBerprestasi07 {
-    Mahasiswa07 [] listMhs= new Mahasiswa07[5];
+    Mahasiswa07 []  listMhs;
     int idx;
+
+    MahasiswaBerprestasi07(int n){
+    listMhs = new Mahasiswa07[n];
+    }
     
     void tambah (Mahasiswa07 m){
         if (idx<listMhs.length) {
@@ -67,7 +71,8 @@ public class MahasiswaBerprestasi07 {
             if (cari ==listMhs[mid].ipk07) {
                 return (mid);
             }
-            else if (listMhs[mid].ipk07>cari){
+            //perbaikan no 5 pertanyaan 6.3.3
+            else if (listMhs[mid].ipk07<cari){
                 return findBinarySearch(cari, left, mid-1);
             }
             else{
