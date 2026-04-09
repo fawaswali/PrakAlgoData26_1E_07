@@ -67,5 +67,38 @@ public class DosenDemo07 {
             }
 
         } while(pilih != 0);
+
+
+        do {System.out.println("\n=== MENU ===");
+            System.out.println("1. Tampilkan Mahasiswa");
+            System.out.println("2. Tampilkan Buku");
+            System.out.println("3. Tampilkan Peminjaman");
+            System.out.println("4. Urutkan Berdasarkan Denda");
+            System.out.println("5. Cari Berdasarkan Denda ");
+            System.out.println("0. Keluar");
+            System.out.print("Pilih: ");
+
+            switch (pilih) {
+                case 1:
+                    
+                    break;
+                case 2:
+                    break;
+                case 3:
+                    break;
+
+                case 4:
+                    break;
+                case 5:
+                    break;
+                case 0:
+                    break;
+                
+            
+                default:
+                    break;
+            }
+            
+        } while ( );
     }
 }
