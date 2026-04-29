@@ -40,7 +40,8 @@ public class MahasiswaDemo07 {
                         int nilai = fawas.nextInt();
                         dinilai.tugasDinilai(nilai);
                         System.out.printf("Nilai Tugas %s adalah %d\n", dinilai.nama07, nilai);
-
+                        String biner = stack.konversiDesimalkeBiner(nilai);
+                        System.out.println("Nilai Biner Tugas: " + biner);
                     }
                     break;
                 case 3:
