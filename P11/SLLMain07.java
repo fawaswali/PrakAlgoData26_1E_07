@@ -1,27 +1,38 @@
 package P11;
 
+import java.util.Scanner;
+
 public class SLLMain07 {
     public static void main(String[] args) {
+
+        Scanner fawas = new Scanner(System.in);
+        
+
         SingleLinkedList07 sll = new SingleLinkedList07();
 
-        Mahasiswa07 mhs1 = new Mahasiswa07("21212203", "Dirga", "4D", 3.6);
-        Mahasiswa07 mhs2 = new Mahasiswa07("24212200", "Alvaro", "1A", 4.0);
-        Mahasiswa07 mhs3 = new Mahasiswa07("22212202", "Cintia", "3C", 3.5);
-        Mahasiswa07 mhs4 = new Mahasiswa07("23212201", "Bilmon", "2B", 3.8);
+        for (int i = 0; i < 4; i++) {
 
+            System.out.println("\nData Mahasiswa ke-" + (i + 1));
+
+            System.out.print("NIM    : ");
+            String nim = fawas.nextLine();
+
+            System.out.print("Nama   : ");
+            String nama = fawas.nextLine();
+
+            System.out.print("Kelas  : ");
+            String kelas = fawas.nextLine();
+
+            System.out.print("IPK    : ");
+            double ipk = fawas.nextDouble();
+            fawas.nextLine();
+
+            Mahasiswa07 mhs = new Mahasiswa07(nim, nama, kelas, ipk);
+
+            sll.addLast(mhs);
+        }
+
+        System.out.println("\nData Linked List Mahasiswa");
         sll.print();
-
-        sll.addFirst(mhs1);
-        sll.print();
-
-        sll.addLast(mhs2);
-        sll.print();
-
-        sll.insertAfter("Dirga", mhs3);
-
-        sll.innsertArt(2, mhs4);
-
-        sll.print();
-    
     }
 }
