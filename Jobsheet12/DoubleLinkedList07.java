@@ -78,18 +78,16 @@ public class DoubleLinkedList07 {
     }
     public void removeFirst() {
         if (isEmpty()) {
-            System.out.println("Linked List kosong, tidak bisa dihapus");
+            System.out.println("Linked List kosong");
             return;
         }
 
+        System.out.println("Data yang dihapus:");
+        head.data.tampil();
+
         if (head == tail) {
-            System.out.println("Data yang dihapus:");
-            head.data.tampil();
             head = tail = null;
         } else {
-            System.out.println("Data yang dihapus:");
-            head.data.tampil();
-
             head = head.next;
             head.prev = null;
         }
@@ -97,18 +95,17 @@ public class DoubleLinkedList07 {
 
     public void removeLast() {
         if (isEmpty()) {
-            System.out.println("Linked List kosong, tidak bisa dihapus");
+            System.out.println("Linked List kosong");
             return;
         }
 
+        System.out.println("Data yang dihapus:");
+        tail.data.tampil();
+
+
         if (head == tail) {
-            System.out.println("Data yang dihapus:");
-            tail.data.tampil();
             head = tail = null;
         } else {
-            System.out.println("Data yang dihapus:");
-            tail.data.tampil();
-
             tail = tail.prev;
             tail.next = null;
         }
