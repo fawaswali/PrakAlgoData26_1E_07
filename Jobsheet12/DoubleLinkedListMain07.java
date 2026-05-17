@@ -67,6 +67,7 @@ public class DoubleLinkedListMain07 {
                 
                 case 6:
                     list.print();
+                    list.printReverse();
                     break;
 
                 case 0:

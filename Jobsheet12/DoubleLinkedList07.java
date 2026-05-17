@@ -68,16 +68,14 @@ public class DoubleLinkedList07 {
     public void print() {
         if (isEmpty()) {
             System.out.println("Linked List masih kosong");
-            return;
-        } 
+        } else {
             Node07 current = head;
             while (current != null) {
                 current.data.tampil();
-                current= current.next;
+                current = current.next;
             }
-        
+        }
     }
-
     public void removeFirst() {
         if (isEmpty()) {
             System.out.println("Linked List kosong, tidak bisa dihapus");
@@ -113,6 +111,19 @@ public class DoubleLinkedList07 {
 
             tail = tail.prev;
             tail.next = null;
+        }
+    }
+
+    public void printReverse() {
+        if (isEmpty()) {
+            System.out.println("Linked List masih kosong");
+            return;
+        }
+
+        Node07 current = tail;
+        while (current != null) {
+            current.data.tampil();
+            current = current.prev;
         }
     }
 
