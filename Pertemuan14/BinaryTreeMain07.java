@@ -52,6 +52,16 @@ public class BinaryTreeMain07 {
         bta.populateData(dataMahasiswas, idxLast);
         System.out.println("\nInorder Traversal Mahasiswa: ");
         bta.traverseInOrder(0);
+        
+
+        System.out.println("\nMin IPK:");
+        bst.cariMinIPK();
+
+        System.out.println("\nMax IPK:");
+        bst.cariMaxIPK();
+
+        System.out.println("\nMahasiswa IPK > 3.50:");
+        bst.tampilMahasiswaIPKdiAtas(3.50);
 
 
     }

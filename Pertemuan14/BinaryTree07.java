@@ -170,4 +170,75 @@ public class BinaryTree07 {
             }
         }
     }
+
+
+    //addRekursif()
+    public void addRekursif(Mahasiswa07 mhs) {
+        root = addRekursifHelper(root, mhs);
+    }
+
+    private Node07 addRekursifHelper(Node07 current, Mahasiswa07 mhs) {
+        if (current == null) {
+            return new Node07(mhs);
+        }
+
+        if (mhs.ipk07 < current.mahasiswa.ipk07) {
+            current.left = addRekursifHelper(current.left, mhs);
+        } else {
+            current.right = addRekursifHelper(current.right, mhs);
+        }
+
+        return current;
+    }
+
+    //cariMinIPK()
+    public void cariMinIPK() {
+        if (isEmpty()) {
+            System.out.println("Tree kosong");
+            return;
+        }
+
+        Node07 current = root;
+        while (current.left != null) {
+            current = current.left;
+        }
+
+        System.out.println("IPK terkecil:");
+        current.mahasiswa.tampilInformasi();
+    }
+
+    //cariMaxIPK()
+    public void cariMaxIPK() {
+        if (isEmpty()) {
+            System.out.println("Tree kosong");
+            return;
+        }
+
+        Node07 current = root;
+        while (current.right != null) {
+            current = current.right;
+        }
+
+        System.out.println("IPK terbesar:");
+        current.mahasiswa.tampilInformasi();
+    }
+
+    //tampilMahasiswaIPKdiAtas()
+    public void tampilMahasiswaIPKdiAtas(double batas) {
+        tampilIPKHelper(root, batas);
+    }
+
+    private void tampilIPKHelper(Node07 node, double batas) {
+        if (node != null) {
+            tampilIPKHelper(node.left, batas);
+
+            if (node.mahasiswa.ipk07 > batas) {
+                node.mahasiswa.tampilInformasi();
+            }
+
+            tampilIPKHelper(node.right, batas);
+        }
+    }
+
+    
 }
