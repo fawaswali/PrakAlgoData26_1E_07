@@ -13,6 +13,13 @@ public class LoopCollection07 {
         fruits.add("Watermelon");
         fruits.add("Leci");
         fruits.push("Salak");
+        fruits.set(fruits.size() - 1, "Strawberry");
+
+        fruits.add("Mango");
+        fruits.add("Guava");
+        fruits.add("Avocado");
+
+        fruits.sort(null); // ascending
 
         for (String fruit : fruits) {
             System.out.printf("%s ", fruit);
